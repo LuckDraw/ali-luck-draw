@@ -34,8 +34,6 @@ Component({
           // 重置坐标轴
           ctx.translate(-this.Radius, -this.Radius)
         },
-        afterInit () {
-        },
         unitFunc: (num, unit) => changeUnits(num + unit),
       }, {
         ...data,
