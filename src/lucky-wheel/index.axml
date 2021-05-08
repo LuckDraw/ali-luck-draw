@@ -1,0 +1,30 @@
+<view style="width: {{width}}; height: {{height}}; overflow: hidden" >
+  <canvas
+    type="2d"
+    id="lucky-wheel"
+    canvas-id="lucky-wheel"
+    onTouchStart="toPlay"
+    style="width: {{width}}; height: {{height}}"
+  ></canvas>
+  <view>
+    <view  a:for="{{blocks}}" a:key="index" a:for-index="index" a:for-item="block" style="visibility: hidden; height: 0">
+      <view a:for="{{block.imgs}}" a:key="i" a:for-index="i" a:for-item="img">
+        <image src="{{img.src}}" data-name="blocks" data-index="{{index}}" data-i="{{i}}" onLoad="imgBindload"></image>
+      </view>
+    </view>
+  </view>
+  <view>
+    <view  a:for="{{prizes}}" a:key="index" a:for-index="index" a:for-item="prize" style="visibility: hidden; height: 0">
+      <view a:for="{{prize.imgs}}" a:key="i" a:for-index="i" a:for-item="img">
+        <image src="{{img.src}}" data-name="prizes" data-index="{{index}}" data-i="{{i}}" onLoad="imgBindload"></image>
+      </view>
+    </view>
+  </view>
+  <view>
+    <view  a:for="{{buttons}}" a:key="index" a:for-index="index" a:for-item="button" style="visibility: hidden; height: 0">
+      <view a:for="{{button.imgs}}" a:key="i" a:for-index="i" a:for-item="img">
+        <image src="{{img.src}}" data-name="buttons" data-index="{{index}}" data-i="{{i}}" onLoad="imgBindload"></image>
+      </view>
+    </view>
+  </view>
+</view>

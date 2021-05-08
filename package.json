@@ -1,0 +1,30 @@
+{
+  "name": "ali-luck-draw",
+  "version": "1.0.3",
+  "description": "支付宝小程序【大转盘 / 九宫格】抽奖组件",
+  "main": "app.js",
+  "scripts": {
+    "build": "rc-tools run compile && node scripts/cp.js && node scripts/rm.js",
+    "pub": "npm run build && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LuckDraw/ali-luck-draw.git"
+  },
+  "files": [
+    "es"
+  ],
+  "keywords": [],
+  "author": "<ldq404@qq.com>",
+  "license": "",
+  "bugs": {
+    "url": "https://github.com/LuckDraw/ali-luck-draw/issues"
+  },
+  "homepage": "https://github.com/LuckDraw/ali-luck-draw#readme",
+  "devDependencies": {
+    "rc-tools": "6.x"
+  },
+  "dependencies": {
+    "lucky-canvas": "^1.5.4"
+  }
+}
